@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CRUMZB000000000000000001 /* CrumzApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CRUMZF000000000000000001 /* CrumzApp.swift */; };
+		CRUMZB000000000000000002 /* CrumzTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CRUMZF000000000000000002 /* CrumzTheme.swift */; };
+		CRUMZB000000000000000003 /* CrumzModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CRUMZF000000000000000003 /* CrumzModels.swift */; };
+		CRUMZB000000000000000004 /* MainNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CRUMZF000000000000000004 /* MainNavigationView.swift */; };
+		CRUMZB000000000000000005 /* PDFStatementGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CRUMZF000000000000000005 /* PDFStatementGenerator.swift */; };
+		CRUMZB000000000000000006 /* QRCodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CRUMZF000000000000000006 /* QRCodeScannerView.swift */; };
+		CRUMZB000000000000000007 /* RouteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CRUMZF000000000000000007 /* RouteService.swift */; };
+		CRUMZB000000000000000008 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CRUMZF000000000000000008 /* AuthViewModel.swift */; };
+		CRUMZB000000000000000009 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CRUMZF000000000000000009 /* SplashView.swift */; };
+		CRUMZB000000000000000010 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CRUMZF000000000000000010 /* LoginView.swift */; };
+		CRUMZB000000000000000011 /* ChangePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CRUMZF000000000000000011 /* ChangePasswordView.swift */; };
+		CRUMZB000000000000000012 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CRUMZF000000000000000012 /* MainView.swift */; };
+		CRUMZB000000000000000013 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CRUMZF000000000000000013 /* ScanView.swift */; };
+		CRUMZB000000000000000014 /* VendorsMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CRUMZF000000000000000014 /* VendorsMapView.swift */; };
+		CRUMZB000000000000000015 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CRUMZF000000000000000015 /* HistoryView.swift */; };
+		CRUMZB000000000000000016 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CRUMZF000000000000000016 /* ProfileView.swift */; };
+		CRUMZB000000000000000018 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CRUMZF000000000000000018 /* GoogleService-Info.plist */; };
+		CRUMZB000000000000000019 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CRUMZF000000000000000019 /* Assets.xcassets */; };
+		CRUMZB000000000000000026 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CRUMZ000000000000000024 /* FirebaseAuth */; };
+		CRUMZB000000000000000027 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CRUMZ000000000000000025 /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CRUMZ000000000000000013 /* Crumz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crumz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CRUMZF000000000000000001 /* CrumzApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrumzApp.swift; sourceTree = "<group>"; };
+		CRUMZF000000000000000002 /* CrumzTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrumzTheme.swift; sourceTree = "<group>"; };
+		CRUMZF000000000000000003 /* CrumzModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrumzModels.swift; sourceTree = "<group>"; };
+		CRUMZF000000000000000004 /* MainNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationView.swift; sourceTree = "<group>"; };
+		CRUMZF000000000000000005 /* PDFStatementGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFStatementGenerator.swift; sourceTree = "<group>"; };
+		CRUMZF000000000000000006 /* QRCodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerView.swift; sourceTree = "<group>"; };
+		CRUMZF000000000000000007 /* RouteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteService.swift; sourceTree = "<group>"; };
+		CRUMZF000000000000000008 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		CRUMZF000000000000000009 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		CRUMZF000000000000000010 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		CRUMZF000000000000000011 /* ChangePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordView.swift; sourceTree = "<group>"; };
+		CRUMZF000000000000000012 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		CRUMZF000000000000000013 /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
+		CRUMZF000000000000000014 /* VendorsMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorsMapView.swift; sourceTree = "<group>"; };
+		CRUMZF000000000000000015 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		CRUMZF000000000000000016 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		CRUMZF000000000000000017 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CRUMZF000000000000000018 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = GoogleService-Info.plist; sourceTree = "<group>"; };
+		CRUMZF000000000000000019 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CRUMZ000000000000000015 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CRUMZB000000000000000026 /* FirebaseAuth in Frameworks */,
+				CRUMZB000000000000000027 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CRUMZ000000000000000003 = {
+			isa = PBXGroup;
+			children = (
+				CRUMZ000000000000000004 /* Crumz */,
+				CRUMZ000000000000000012 /* Products */,
+				CRUMZ000000000000000011 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CRUMZ000000000000000004 /* Crumz */ = {
+			isa = PBXGroup;
+			children = (
+				CRUMZF000000000000000001 /* CrumzApp.swift */,
+				CRUMZ000000000000000005 /* Theme */,
+				CRUMZ000000000000000006 /* Models */,
+				CRUMZ000000000000000007 /* Navigation */,
+				CRUMZ000000000000000008 /* Services */,
+				CRUMZ000000000000000009 /* ViewModels */,
+				CRUMZ000000000000000010 /* Views */,
+				CRUMZF000000000000000018 /* GoogleService-Info.plist */,
+				CRUMZF000000000000000017 /* Info.plist */,
+				CRUMZF000000000000000019 /* Assets.xcassets */,
+			);
+			path = Crumz;
+			sourceTree = "<group>";
+		};
+		CRUMZ000000000000000005 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				CRUMZF000000000000000002 /* CrumzTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		CRUMZ000000000000000006 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CRUMZF000000000000000003 /* CrumzModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CRUMZ000000000000000007 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				CRUMZF000000000000000004 /* MainNavigationView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		CRUMZ000000000000000008 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CRUMZF000000000000000005 /* PDFStatementGenerator.swift */,
+				CRUMZF000000000000000006 /* QRCodeScannerView.swift */,
+				CRUMZF000000000000000007 /* RouteService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CRUMZ000000000000000009 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CRUMZF000000000000000008 /* AuthViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CRUMZ000000000000000010 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CRUMZF000000000000000009 /* SplashView.swift */,
+				CRUMZF000000000000000010 /* LoginView.swift */,
+				CRUMZF000000000000000011 /* ChangePasswordView.swift */,
+				CRUMZF000000000000000012 /* MainView.swift */,
+				CRUMZF000000000000000013 /* ScanView.swift */,
+				CRUMZF000000000000000014 /* VendorsMapView.swift */,
+				CRUMZF000000000000000015 /* HistoryView.swift */,
+				CRUMZF000000000000000016 /* ProfileView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CRUMZ000000000000000011 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CRUMZ000000000000000012 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CRUMZ000000000000000013 /* Crumz.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CRUMZ000000000000000002 /* Crumz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CRUMZ000000000000000019 /* Build configuration list for PBXNativeTarget "Crumz" */;
+			buildPhases = (
+				CRUMZ000000000000000014 /* Sources */,
+				CRUMZ000000000000000015 /* Frameworks */,
+				CRUMZ000000000000000016 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Crumz;
+			packageProductDependencies = (
+				CRUMZ000000000000000024 /* FirebaseAuth */,
+				CRUMZ000000000000000025 /* FirebaseFirestore */,
+			);
+			productName = Crumz;
+			productReference = CRUMZ000000000000000013 /* Crumz.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CRUMZ000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					CRUMZ000000000000000002 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = CRUMZ000000000000000022 /* Build configuration list for PBXProject "Crumz" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CRUMZ000000000000000003;
+			packageReferences = (
+				CRUMZ000000000000000023 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = CRUMZ000000000000000012 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CRUMZ000000000000000002 /* Crumz */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CRUMZ000000000000000016 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CRUMZB000000000000000018 /* GoogleService-Info.plist in Resources */,
+				CRUMZB000000000000000019 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CRUMZ000000000000000014 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CRUMZB000000000000000001 /* CrumzApp.swift in Sources */,
+				CRUMZB000000000000000002 /* CrumzTheme.swift in Sources */,
+				CRUMZB000000000000000003 /* CrumzModels.swift in Sources */,
+				CRUMZB000000000000000004 /* MainNavigationView.swift in Sources */,
+				CRUMZB000000000000000005 /* PDFStatementGenerator.swift in Sources */,
+				CRUMZB000000000000000006 /* QRCodeScannerView.swift in Sources */,
+				CRUMZB000000000000000007 /* RouteService.swift in Sources */,
+				CRUMZB000000000000000008 /* AuthViewModel.swift in Sources */,
+				CRUMZB000000000000000009 /* SplashView.swift in Sources */,
+				CRUMZB000000000000000010 /* LoginView.swift in Sources */,
+				CRUMZB000000000000000011 /* ChangePasswordView.swift in Sources */,
+				CRUMZB000000000000000012 /* MainView.swift in Sources */,
+				CRUMZB000000000000000013 /* ScanView.swift in Sources */,
+				CRUMZB000000000000000014 /* VendorsMapView.swift in Sources */,
+				CRUMZB000000000000000015 /* HistoryView.swift in Sources */,
+				CRUMZB000000000000000016 /* ProfileView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CRUMZ000000000000000017 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Crumz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.crumz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1";
+			};
+			name = Debug;
+		};
+		CRUMZ000000000000000018 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Crumz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.crumz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1";
+			};
+			name = Release;
+		};
+		CRUMZ000000000000000020 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDEFINED_VARIABLES = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CRUMZ000000000000000021 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDEFINED_VARIABLES = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CRUMZ000000000000000019 /* Build configuration list for PBXNativeTarget "Crumz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CRUMZ000000000000000017 /* Debug */,
+				CRUMZ000000000000000018 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CRUMZ000000000000000022 /* Build configuration list for PBXProject "Crumz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CRUMZ000000000000000020 /* Debug */,
+				CRUMZ000000000000000021 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CRUMZ000000000000000023 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.29.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CRUMZ000000000000000024 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CRUMZ000000000000000023 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		CRUMZ000000000000000025 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CRUMZ000000000000000023 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CRUMZ000000000000000001 /* Project object */;
+}
