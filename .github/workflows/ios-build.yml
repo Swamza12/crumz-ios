@@ -1,0 +1,76 @@
+name: Build iOS for Appetize.io & Sideloadly
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build-ios:
+    name: Build Appetize Simulator (.app.zip) & Sideloadly (.ipa)
+    runs-on: macos-14
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Locate Xcode Project Directory
+        id: locate
+        run: |
+          if [ -d "crumz-ios/Crumz.xcodeproj" ]; then
+            echo "workdir=crumz-ios" >> $GITHUB_OUTPUT
+          else
+            echo "workdir=." >> $GITHUB_OUTPUT
+          fi
+
+      - name: Build Crumz.app for Appetize.io (iOS Simulator)
+        working-directory: ${{ steps.locate.outputs.workdir }}
+        run: |
+          xcodebuild clean build \
+            -project Crumz.xcodeproj \
+            -scheme Crumz \
+            -configuration Debug \
+            -sdk iphonesimulator \
+            -derivedDataPath build-sim \
+            ARCHS="x86_64 arm64" \
+            ONLY_ACTIVE_ARCH=NO \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY=""
+
+          APP_PATH=$(find build-sim/Build/Products -name "Crumz.app" | head -n 1)
+          echo "Found Simulator App at: $APP_PATH"
+          ditto -c -k --sequesterRsrc --keepParent "$APP_PATH" Crumz-Appetize-Simulator.zip
+
+      - name: Build Crumz.ipa for Physical iPhone (Sideloadly)
+        working-directory: ${{ steps.locate.outputs.workdir }}
+        run: |
+          xcodebuild clean build \
+            -project Crumz.xcodeproj \
+            -scheme Crumz \
+            -configuration Release \
+            -sdk iphoneos \
+            -derivedDataPath build-device \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            AD_HOC_CODE_SIGNING_ALLOWED=YES
+
+          DEVICE_APP=$(find build-device/Build/Products -name "Crumz.app" | head -n 1)
+          mkdir -p Payload
+          cp -R "$DEVICE_APP" Payload/Crumz.app
+          zip -r -y Crumz-Sideloadly.ipa Payload
+
+      - name: Upload Appetize.io Simulator Bundle (Upload this .zip to Appetize.io)
+        uses: actions/upload-artifact@v4
+        with:
+          name: Crumz-Appetize-Simulator-Zip
+          path: ${{ steps.locate.outputs.workdir }}/Crumz-Appetize-Simulator.zip
+
+      - name: Upload Physical iPhone IPA (Drag into Sideloadly)
+        uses: actions/upload-artifact@v4
+        with:
+          name: Crumz-Sideloadly-IPA
+          path: ${{ steps.locate.outputs.workdir }}/Crumz-Sideloadly.ipa
