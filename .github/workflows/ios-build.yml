@@ -10,7 +10,7 @@ on:
 jobs:
   build-ios:
     name: Build Appetize Simulator (.app.zip) & Sideloadly (.ipa)
-    runs-on: macos-14
+    runs-on: macos-latest
 
     steps:
       - name: Checkout Repository
